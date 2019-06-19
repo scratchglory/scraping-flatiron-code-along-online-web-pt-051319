@@ -23,9 +23,9 @@ class Scraper
       # binding.pry
       ap course
      new_course = Course.new()
-     new_course.title = course.css(".post>h2").text
-     new_course.schedule = course.css(".date").text
-     new_course.description = course.css(".posts-holder>").text
+     new_course.title = course.css("h2").text
+     new_course.schedule = course.css("em").text
+     new_course.description = course.css("p").text
     end
   end
   
