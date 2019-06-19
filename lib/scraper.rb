@@ -24,7 +24,7 @@ class Scraper
       ap course
      new_course = Course.new()
      new_course.title = course.css(".post>h2").text
-     new_course.schedule = course.css(".post").text
+     new_course.schedule = course.css(".date").text
     end
   end
   
