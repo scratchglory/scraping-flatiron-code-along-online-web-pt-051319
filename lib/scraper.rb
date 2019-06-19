@@ -23,7 +23,7 @@ class Scraper
       # binding.pry
       ap course
      new_course = Course.new()
-     new_course.title
+     new_course.css
     end
   end
   
